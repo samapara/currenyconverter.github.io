@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.header {
+    min-height: 100vh;
+    background: url('../img/background.png');
+    /* background: white; */
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.intro, .currency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro > button, h1 {
+    align-self: center;
+}
+
+h1 {
+    color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        padding: 1rem;
+        grid-auto-flow: row;
+    }
+}
